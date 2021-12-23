@@ -10,7 +10,24 @@
     <main class="flex flex-1 w-full justify-center items-center">
         <div class="space-y-4 flex flex-col justify-center items-center">
             <h1 class="text-2xl"><span class="text-red-700 font-bold text-3xl">( yeShirts )</span> Feedback</h1>
-            <button class="px-4 py-3 bg-red-700 text-white rounded-lg text-md outline-none">Submit</button>
+
+            <form method="POST" action="/feedback" class="space-y-3">
+<div>
+    <h4>Email</h4>
+    <input type="email" name="email" class="w-full border-2 border-gray-300 px-2 py-1 rounded-lg">
+</div>
+
+<div>
+    <h4>Message</h4>
+    <input type="text" name="message" class="w-full border-2 border-gray-300 px-2 py-1 rounded-lg">
+</div>
+
+           
+                </table>
+                <button type="submit"
+                    class="px-4 py-3 bg-red-700 text-white rounded-lg text-md outline-none">Submit</button>
+            </form>
+
         </div>
     </main>
 
