@@ -1,0 +1,24 @@
+{
+  "name": "yeshirt-backend",
+  "version": "1.0.0",
+  "description": "backend app for website yeShirts",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirbukhari/yeShirt-backend.git"
+  },
+  "author": "Syed Ali Raza Bukhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirbukhari/yeShirt-backend/issues"
+  },
+  "homepage": "https://github.com/alirbukhari/yeShirt-backend#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}
