@@ -45,6 +45,9 @@ app.post('/user/login', async (req, res) => {
 app.post('/user', async (req, res) => {
   const user = { id: nanoid(6), ...req.body };
 
+  const alreadyRegistered = Object.values(users).find((user) => user.email === req.body.email);
+  if (alreadyRegistered) return res.status(422).json({ success: false, message: 'User already registered' });
+
   users[user.id] = user;
 
   return res.json({ success: true, message: 'User Registered' });
